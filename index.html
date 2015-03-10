@@ -8,16 +8,16 @@
   <body class="mixpanel-platform-body">
     <script>
       MP.api.ready(function() {
-        var eventName = 'Game Played';
+    var eventName = 'Game Played';
     var $mau = MP.api.segment(eventName, 'mp_country_code', {
-        from: moment().subtract(1, 'months'),
+        from: moment().subtract(10, 'months'),
         to: moment(),
         type: 'unique',
         unit: 'month'
     });
 
     var $dau = MP.api.segment(eventName, 'mp_country_code', {
-        from: moment().subtract(1, 'days'),
+        from: moment().subtract(10, 'days'),
         to: moment(),
         type: 'unique',
         unit: 'day'
