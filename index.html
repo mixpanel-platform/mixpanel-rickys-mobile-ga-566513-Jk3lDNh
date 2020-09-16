@@ -8,7 +8,7 @@
   <body class="mixpanel-platform-body">
     <script>
       MP.api.ready(function() {
-    var eventName = 'Game Played';
+    var eventName = 'App Open';
     var $mau = MP.api.segment(eventName, 'mp_country_code', {
         from: moment().subtract(10, 'months'),
         to: moment(),
